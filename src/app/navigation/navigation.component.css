@@ -1,0 +1,49 @@
+.navigation {
+  overflow: hidden;
+  width: 80%;
+}
+.navigation a {
+  color: greenyellow;
+  display: block;
+  float: left;
+  padding: 0.8em 1em;
+  text-align: center;
+  text-decoration: none;
+}
+.navigation a:hover {
+  background-color: black;
+}
+.navigation .icon {
+  display: none;
+}
+
+nav {
+  background-color: darkgreen;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+  .navigation a:not(:first-child) {
+    display: none;
+  }
+  .navigation a.icon {
+    display: block;
+    float: right;
+  }
+  .navigation.responsive {
+    position: relative;
+  }
+  .navigation.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navigation.responsive a {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+}
